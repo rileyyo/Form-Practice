@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <script src="./index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="page-container">
+        <div class="image-container">
+            <div class="title-bar">
+                <img src="./odin-lined.png" alt="" style="width: 100px;">
+                <h1>Odin</h1>
+            </div>
+        </div>
+        <div class="info-container">
+            <h3>This is not a real online service! You know you need something like this in your life to help you realize
+                your
+                deepest dreams. Sign up
+                <span style="font-style: italic;">now</span> to get started. <br>
+            </h3>
+            <h3>You <span style="font-style: italic;">know</span> you want to.</h3>
+            <form>
+                <div class="form-container">
+                    <h3>Let's do this!</h3>
+                    
+                    <div class="form-row">
+                        <label for="first-name">FIRST NAME</label>
+                        <label for="last-name">LAST NAME</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="email">EMAIL</label>
+                        <label for="phone-number">PHONE NUMBER</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" name="email" id="email" placeholder="example@email.com">
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="888-888-8888"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12">
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                    <span id="password-error" style="visibility: hidden;">*Passwords do not match</span>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <p>Already have an account? <a href="" style="text-decoration: none; color: #61392D;">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
